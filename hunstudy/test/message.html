@@ -1,0 +1,27 @@
+
+<!--<link href="/css/smoothness/jquery-ui-1.9.1.custom.css" rel="stylesheet">
+<script src="/js/jquery-ui-1.9.1.custom.min.js"></script>-->
+
+<style>
+#message_main { margin-top: 20px }
+</style>
+
+<script src="/js/message.js" type="text/javascript" charset="utf-8"></script>
+
+<link rel="stylesheet" href="/css/message.css?_3" type="text/css">
+<nav id="productheader" data-hires="true">
+	<h2><img src="/img/subtitle/sub_title_message.png" alt="message"></h2>
+	<ul>
+		<li id="message"><a href="javascript:pageopen('#message_main', './message/message_list.html', 'message')">전달</a></li>
+		<li id="message_help"><a href="javascript:pageopen('#message_main', './message/message_help.html', 'message');">도움</a></li>
+		<li id="message"><a href="javascript:pageopen('#message_main', './message/schedule/index.php', 'message');">스케쥴 뷰</a></li>
+		<li id="message"><a href="javascript:pageopen('#message_main', './message/schedule/test.php', 'message')">TEST</a></li>
+		<!--<li id="message"><a href="/bootstrap/docs/components.html" target="_blank">Bootstrap</a></li>-->
+	</ul>
+</nav>
+<script>
+loginCheck('none');
+pageopen('#message_main', './message/message_list.html', 'message');
+$('#newmessage').slideUp();
+</script>
+<div id="message_main"></div>

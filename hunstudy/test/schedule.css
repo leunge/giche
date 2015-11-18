@@ -1,0 +1,131 @@
+#header ul {
+	text-align: center;
+}
+#header ul li {
+	display: inline;
+}
+#header ul li a {
+	margin-right: 10px;
+}
+#filelist {
+	border: 1px solid #CCC;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	-webkit-border-radius: 8px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	margin-bottom: 20px
+}
+#filelist li a {
+	float: left;
+}
+#filelist li .download {
+	background: url("/img/icon/emblems/emblem-downloads.png") no-repeat 0 0;
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin-left: 1em;
+	overflow: hidden;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+#filelist li .download span {
+	text-indent: -9999px;
+}
+#filelist li {
+	padding: auto;
+	list-style: none;
+}
+#filelist ul {
+	padding-left: 3em;
+}
+#filelist ul li {
+	padding: auto;
+}
+#schedule_main table {
+	margin: auto;
+}
+#schedule_main .mover {
+	background-color: #d5e2ba;
+}
+#schedule_main tr:hover {
+	background-color: #d5e2ba;	
+}
+#schedule_main tr td:hover {
+	background-color: #c2d2aa;	
+	font-weight: bold;
+	color: red;
+}
+
+#schedule_main tr td {
+	text-align: center;
+	width: 18px;
+}
+
+
+/*
+#eaf1dd
+#ccffcc
+#ccffff
+#ffffcc
+*/
+
+
+/* TD Info */
+#schedule_main .day {
+	
+}
+#schedule_main .night {
+	color: #ffffff;
+	background-color: #000000;
+}
+#schedule_main .off {
+	background-color: #ccffff
+}
+#schedule_main .sangoff {
+	background-color: #ccffcc
+}
+#schedule_main .vacation {
+	background-color: #ffffcc
+}
+#schedule_main .sat {
+	background-color: #ffca9e
+}
+#schedule_main .sun {
+	background-color: #febebe
+}
+
+
+
+#giche .B {
+	width: 130px;
+	font-weight: bold;
+}
+#giche .A {
+	display: none;
+}
+#giche .AH, .AI, .AJ, .AK, .AL, .AM, .AN, .AO, .AP, .AQ {
+	display: none;
+}
+#giche #r24, #r25, #r26, #r27, #r28, #r29, #r30, #r31, #r32, #r33, #r34, #r35, #r36 {
+	display: none;
+}
+
+
+
+
+#jungbo .A {
+	display: none;
+}
+#jungbo .B {
+	width: 130px;
+	font-weight: bold;
+}
+#jungbo .AR, .AS, .AT, .AU, .AV, .AW {
+	display: none;
+}
+
+
+#sanghwang .opname {
+	width: 130px;
+	font-weight: bold;
+}

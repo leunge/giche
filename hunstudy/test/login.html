@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- META -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	<meta name="Generator" content="XpressEngine" />
+<!-- TITLE -->
+	<title></title>
+<!-- CSS -->
+	<link rel="stylesheet" href="/xe/common/css/xe.min.css?20121021144313" type="text/css" media="all" />
+	<link rel="stylesheet" href="/xe/modules/message/skins/default/message.css?20121021144313" type="text/css" media="all" />
+	<link rel="stylesheet" href="/xe/modules/admin/tpl/css/admin_ko.css?20121021144313" type="text/css" media="all" />
+	<link rel="stylesheet" href="/xe/modules/admin/tpl/css/admin.min.css?20121021144313" type="text/css" media="all" />
+	<style type="text/css">
+		/*#loginAccess { position: absolute; top: 50%; left: 50%; margin: -205px -192px;};*/
+	</style>
+<!-- JS -->
+	<script type="text/javascript" src="/xe/common/js/jquery.min.js?20121021144313"></script>
+	<script type="text/javascript" src="/xe/common/js/x.min.js?20121021144313"></script>
+	<script type="text/javascript" src="/xe/common/js/xe.min.js?20121021144313"></script>
+	<script type="text/javascript" src="/xe/modules/message/skins/default/message.js?20121021144313"></script>
+	<script type="text/javascript" src="/xe/files/cache/ruleset/f501a824d0d792d34c8aacb6e35f7799.ko.js?20121025053627"></script>
+	<script type="text/javascript" src="/xe/modules/admin/tpl/js/admin.min.js?20121021144313"></script>
+	<!-- RSS -->
+		<!-- ICON -->
+	<link rel="shortcut icon" href="./modules/admin/tpl/img/faviconSample.png" />	<link rel="apple-touch-icon" href="./modules/admin/tpl/img/mobiconSample.png" /></head>
+<body>
+	<script type="text/javascript">
+	//<![CDATA[
+	var current_url = "http://48.2.160.42/login.html";
+	var request_uri = "http://48.2.160.42/";
+var current_mid = "";
+var waiting_message = "서버에 요청 중입니다. 잠시만 기다려주세요.";
+var ssl_actions = new Array();
+var default_url = "http://48.2.160.42/xe/";
+	//]]>
+	</script>
+	
+		<div id="loginAccess" class="gLogin">
+		<center></center><br><br>
+	<div class="mLogin" id="gLogin">
+		<form  action="/xe/index.php?act=procMemberLogin" method="post" id="gForm"><input type="hidden" name="error_return_url" value="/index.php?code=error" /><input type="hidden" name="mid" value="" /><input type="hidden" name="vid" value="" /><input type="hidden" name="ruleset" value="@" />
+		<input type="hidden" name="module" value="member" />
+		<input type="hidden" name="act" value="procMemberLogin" />
+		<input type="hidden" name="success_return_url" value="/" />
+			<fieldset>
+				<ul class="idpw">
+					<li><input type="text" name="user_id" id="uid" value="" class="iText" title="아이디" /></li>
+					<li><input type="password" name="password" id="upw" value="" class="iText" title="비밀번호" /></li>
+				</ul>
+				<div class="buttonArea">
+					<p class="keeping">
+						<input style="display:none" type="checkbox" name="keep_signed" id="keepid" class="inputCheck" value="Y" onclick="jQuery('#warning')[(jQuery('#keepid:checked').size()>0?'addClass':'removeClass')]('open');" />						
+						<label style="display:none" for="keepid">로그인 유지</label>
+					</p>
+					<div id="warning" class="">
+						<p>브라우저를 닫더라도 로그인이 계속 유지될 수 있습니다. 로그인 유지 기능을 사용할 경우 다음 접속부터는 로그인을 하실 필요가 없습니다. 꼭 로그아웃을 해주세요.</p>
+					</div>
+					<span class="buttonAccount"><input type="submit" value="로그인" /></span>
+				</div>
+			</fieldset>
+		</form>
+		<ul class="help">
+			<li class="first"><a href="/xe/index.php?act=dispMemberFindAccount"><span>아이디/비밀번호 찾기</span></a></li>
+			<li><a href="/xe/index.php?act=dispMemberSignUpForm"><span>회원 가입</span></a></li>
+		</ul>
+	</div>		</div>
+	<!-- ETC -->
+	<div class="wfsr"></div>
+	<script type="text/javascript" src="/xe/files/cache/js_filter_compiled/d1fa9ffc0f1c34e7a649fd22d54ad3e3.ko.compiled.js?20121021153341"></script>
+</body>
+</html>
+

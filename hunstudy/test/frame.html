@@ -1,0 +1,135 @@
+	<script type="text/javascript">
+	var searchSection = '';
+	var searchCountry = 'kr';
+	</script>
+<script src="/assets/js/bootstrap-button.js" charset="utf-8"></script>
+<script src="/assets/js/bootstrap-tooltip.js" charset="utf-8"></script>
+<div id="globalheader-ie" style="display:none">
+<ul id="globalnav" role="navigation">
+		<li id="gn-home"><a href="/" class=""><span>OP</span></a></li>
+		<li id="gn-message"><a onclick="javascript:pageopen('#main', './message/message.html', 'message');" class=""><span>Message</span></a></li>
+		<li id="gn-board"><a onclick="javascript:frameopen('#main', './xe/index.php?mid=free', 'board');"><span>OP Board</span></a></li>
+		<li id="gn-devforum"><a onclick="javascript:pageopen('#main', './forum/forum.html', 'devforum');" class=""><span>Dev Forum</span></a></li>
+		<li id="gn-git"><a onclick="javascript:pageopen('#main', './A/A.php', 'git', 'GET?test=1');"><span>Git</span></a></li>
+		<li id="gn-admin"><a href="/xe/index.php?module=admin&act=dispMemberAdminList" target="_blank"><span>Admin</span></a></li>
+		<li id="tb-boardset"><a href="javascript:frameopen('#main', '/xe/index.php?mid=free&act=dispBoardAdminBoardInfo');"><span>boardSet</span></a></li>
+		<li id="tb-info"><a href="javascript:frameopen('#main', '/xe/index.php?mid=free&act=dispMemberInfo');"><span>info</span></a>
+		<li id="gn-search"><a href="javascript:javascript:pageopen('#main', './search/search.php', 'none', 'GET?q=1');"><span>search</span></a>
+		<li id="gn-nas"><a onclick="javascript:pageopen('#main', './ajaxplorer/login.php', 'nas');"><span>NAS</span></a></li>
+		</li>
+		<li id="tb-logout"><a href="/xe/index.php?mid=free&act=dispMemberLogout"><span>logout</span></a></li>
+		<!--
+		<li id="gn-itunes"><a onclick="javascript:pageopen('main', 'B');"><span>iTunes</span></a></li>
+		<li id="gn-support" class="gn-last"><a href="http://www.apple.com/kr/support/" onclick="s_objectID=&quot;http://www.apple.com/kr/support/_1&quot;;return this.s_oc?this.s_oc(e):true"><span>고객지원</span></a></li>-->
+	</ul>
+</div>
+<script>
+	if ($.browser.msie == true) {
+		$('#globalheader-ie').show();
+	}
+</script> 
+<nav id="globalheader" class="globalheader-js noinset globalheader-loaded globalheader-loaded">
+	<!--googleoff: all-->
+	<ul id="globalnav" role="navigation">
+		<!--<li id="gn-home"><a href="/" class=""><span>OP</span></a></li>-->
+		<li id="gn-home"><a onclick="javascript:pageopen('#main', './home/home.html');" class=""><span>OP</span></a></li>
+		<li id="gn-message"><a onclick="javascript:pageopen('#main', './message/message.html', 'message');" class=""><span>Message</span></a></li>
+		<li id="gn-board"><a onclick="javascript:frameopen('#main', './xe/index.php?mid=free', 'board');"><span>OP Board</span></a></li>
+		<li id="gn-devforum"><a onclick="javascript:pageopen('#main', './forum/forum.html', 'devforum');" class=""><span>Dev Forum</span></a></li>
+		<li id="gn-git"><a onclick="javascript:pageopen('#main', './git/git.php', 'git');"><span>Git</span></a></li>
+		<!--<li id="gn-admin"><a onclick="javascript:frameopen('#main', './ajaxplorer/index.php?ignore_tests=true', 'admin', '750');"><span>Admin</span></a></li>-->
+		<li id="gn-nas"><a onclick="javascript:pageopen('#main', './ajaxplorer/login.php', 'nas');"><span>NAS</span></a></li>
+		<!--
+		<li id="gn-itunes"><a onclick="javascript:pageopen('main', 'B');"><span>iTunes</span></a></li>
+		<li id="gn-support" class="gn-last"><a href="http://www.apple.com/kr/support/" onclick="s_objectID=&quot;http://www.apple.com/kr/support/_1&quot;;return this.s_oc?this.s_oc(e):true"><span>고객지원</span></a></li>-->
+	</ul>
+	<!--googleon: all-->
+	<div id="globalsearch">
+		<form action="/search/" method="get" class="search empty" onSubmit="javascript:search(); return false;" id="g-search"><div class="sp-label">
+			<label for="sp-searchtext">검색</label>
+			<input type="text" name="q" id="sp-searchtext" accesskey="s" autocomplete="off"><div class="reset"></div>
+		<div class="spinner hide"></div></div><input id="search-section" type="hidden" name="sec" value="global"></form>
+		<div id="sp-magnify"><div class="magnify-searchmode"></div><div class="magnify"></div></div>
+		<div id="sp-results"></div>
+	</div>
+</nav>
+<!-- /NAVIGATION -->
+
+<script>
+$('#toolbar > li > a').tooltip();
+</script>
+<div id="toolbarheader">
+	<ul id="toolbar">
+		<li id="tb-boardset">
+			<a rel="tooltip" title="admin" data-placement="bottom" href="/xe/index.php?module=admin&act=dispMemberAdminList" target="_blank"><span>boardSet</span></a>
+		</li>
+		<li id="tb-info">
+			<a rel="tooltip" title="member_info" data-placement="bottom" href="javascript:frameopen('#main', '/xe/index.php?mid=free&act=dispMemberInfo');"><span>info</span></a>
+		</li>
+		<li id="tb-logout">
+			<a rel="tooltip" title="logout" data-placement="bottom" href="/xe/index.php?mid=free&act=dispMemberLogout"><span>logout</span></a>
+		</li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+	AC.GlobalNav.Instance = new AC.GlobalNav();
+</script>
+
+	<div id="top">
+<!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+
+
+
+  
+
+<!-- End SiteCatalyst code version: H.8. -->
+</div>
+	
+<script>
+	pageopen('#main', './home/home.html');
+</script>
+<div id="divalarm">
+<div style="display: none;" id="newmessage" class="alert alert-success" onClick="javascript:pageopen('#main', './message/message.html', 'message');">
+<center>확인 안한 <b>전달</b>이 있습니다. <span id="cnt" class="badge badge-important">?</span></center>
+</div>
+</div>
+	<div id="main">
+	
+	<!--/content-->
+	</div><!--/main-->
+	
+	
+<footer id="globalfooter">
+
+
+	<ul class="gf-links piped">
+	<!--link:right-->
+	<li>Quick Menu >></li>
+	<li><a href="javascript:pageopen('#main', './home/home.html');" class="">OP</a></li>
+	<li><a href="javascript:pageopen('#main', './message/schedule/index.php', 'message');">Schedule View</a></li>
+	<li><a href="javascript:frameopen('#main', './xe/index.php?mid=health', 'devforum');">Health Board</a></li>
+	<li><a href="javascript:frameopen('#main', './xe/index.php?mid=dev', 'devforum');">Dev Board</a></li>
+	<li><a href="javascript:pageopen('#main', './opwiki/login.php', 'devforum');">OP Wiki</a></li>
+	<li><a href="javascript:pageopen('#main', './ajaxplorer/login.php', 'nas');">NAS</a></li>
+	</ul>
+	
+	<div class="gf-sosumi">
+	</div>
+	
+	<div id="footernav">
+	</div>
+	
+
+</footer>
+
+<!-- OP Chat -->
+<div id="chatbox_chatlist" class="chatbox" style="bottom: 0px; right: 20px; display: block; ">	<div class="chatboxhead" onclick="javascript:toggleChatBoxGrowth('chatlist');mkChatList();"><div class="chatboxtitle"><a href="javascript:void(0);">Chat List</a></div>	<div class="chatboxoptions">	<!--<a href="javascript:void(0)" onclick="javascript:toggleChatBoxGrowth('chatlist')">-</a>-->	<!--<a href="javascript:void(0)" onclick="javascript:closeChatBox('chatlist')">X</a>-->	</div>	<br clear="all"></div><div class="chatboxcontent" style="display: none; "></div><div class="chatboxinput" style="display: none; "></div></div>
+<script>chatStart();</script>
+
+<!-- Alert -->
+<div id="alert"></div>
+
+	<!--/globalfooter-->
+
+
